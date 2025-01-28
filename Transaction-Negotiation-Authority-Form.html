@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction Negotiation Authority</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+        .logo {
+            background-color: #000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        .instruction-text {
+            font-size: 0.8em;
+            color: #666;
+            margin: 5px 0;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .checkbox-group {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .number-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 30px);
+            gap: 2px;
+            margin: 10px 0;
+        }
+        .number-grid-cell {
+            border: 1px solid #000;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .form-row label {
+            min-width: 200px;
+            font-weight: bold;
+        }
+        .form-row .input-field {
+            flex: 1;
+            border-bottom: 1px solid #000;
+            padding: 2px;
+        }
+        .stamp {
+            border: 2px solid #000;
+            border-radius: 50%;
+            padding: 15px;
+            width: 120px;
+            text-align: center;
+            font-size: 0.8em;
+            position: absolute;
+            right: 50px;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+        }
+        .bsb-account {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .processing-limit {
+            margin: 10px 0;
+        }
+        .limit-frequency {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Transaction Negotiation Authority</h1>
+        <div class="logo">
+            <img src="/api/placeholder/50/50" alt="NAB logo" />
+        </div>
+    </div>
 
+    <div class="instruction-text">
+        Please use blue or black pen and write in BLOCK LETTERS
+    </div>
+
+    <div class="form-section">
+        <div class="form-row">
+            <label>To – Manager (Insert the name and address of the Lodgement Financial Institution)</label>
+        </div>
+        <div class="input-field">PAYROLL BUREAU</div>
+        <div class="input-field">123,XYZ</div>
+        <div class="input-field">ABC, 1234</div>
+    </div>
+
+    <div class="note-section">
+        <p>In accordance with the details in the schedule below, you are authorised:</p>
+        <p><strong>NOTE</strong> Tick both boxes if TNA Issuer is the User FI and holds funding account, otherwise tick applicable box</p>
+        <div class="checkbox-item">
+            ☐ To accept from the User or its nominated Bureau, files which include direct credit items on behalf of the User, and to act on such items to the value of the processing limit, limit frequency and period specified or to such other processing limit and/or period as we may from time to time advise. (Note: Required if TNA Issuer is also User FI.)
+        </div>
+        <div class="checkbox-item">
+            ☐ To take on the account provider for the total value of credit items processed up to and including the processing limit specified below or such otherwise advised plus any charges as may be applied by you. For valuable consideration received, we agree to accept all drawings or other wise advised changes that may be initiated by you in accordance with this authority.
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-row">
+            <label>From – branch:</label>
+            <div class="input-field">Specialised Products</div>
+        </div>
+        
+        <div class="form-row">
+            <label>Prepared by – name:</label>
+            <div class="input-field"></div>
+        </div>
+
+        <div class="form-row">
+            <label>Checked by – name:</label>
+            <div class="input-field"></div>
+        </div>
+
+        <div class="form-row">
+            <label>Authorised by – name:</label>
+            <div class="input-field"></div>
+        </div>
+    </div>
+
+    <div class="stamp">
+        National Australia Bank Limited<br>
+        NAB 1300445972<br>
+        Specialised Products<br>
+        Date: 01/01/2000
+    </div>
+
+    <div class="schedule-section">
+        <h3>Schedule</h3>
+        <div class="number-grid" style="margin-bottom: 20px;">
+            <div class="number-grid-cell">1</div>
+            <div class="number-grid-cell">2</div>
+            <div class="number-grid-cell">3</div>
+            <div class="number-grid-cell">4</div>
+            <div class="number-grid-cell">5</div>
+            <div class="number-grid-cell">6</div>
+        </div>
+
+        <div class="form-row">
+            <label>User name:</label>
+            <div class="input-field">XYZ</div>
+        </div>
+
+        <div class="form-row">
+            <label>Bureau name (if applicable):</label>
+            <div class="input-field">ABC</div>
+        </div>
+
+        <div class="form-row">
+            <label>Account nominated for drawings:</label>
+            <div class="input-field">XYZ</div>
+        </div>
+
+        <div class="bsb-account">
+            <div>
+                <label>BSB Number</label>
+                <div class="number-grid">
+                    <div class="number-grid-cell">1</div>
+                    <div class="number-grid-cell">2</div>
+                    <div class="number-grid-cell">3</div>
+                    <div class="number-grid-cell">4</div>
+                    <div class="number-grid-cell">5</div>
+                    <div class="number-grid-cell">6</div>
+                </div>
+            </div>
+            <div>
+                <label>Account Number</label>
+                <div class="number-grid" style="grid-template-columns: repeat(8, 30px);">
+                    <div class="number-grid-cell">1</div>
+                    <div class="number-grid-cell">2</div>
+                    <div class="number-grid-cell">3</div>
+                    <div class="number-grid-cell">4</div>
+                    <div class="number-grid-cell">5</div>
+                    <div class="number-grid-cell">6</div>
+                    <div class="number-grid-cell">7</div>
+                    <div class="number-grid-cell">8</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="processing-limit">
+            <label>Processing limit (Non-cumulative)</label>
+            <div class="input-field">10000000</div>
+            <div>Amount in words: ONE MILLION DOLLARS</div>
+        </div>
+
+        <div class="limit-frequency">
+            <label>Limit frequency (select one):</label>
+            <div>
+                ☐ Weekly ☒ Fortnightly ☐ Monthly ☐ Other – specify
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label>Period ending (specify date)</label>
+            <div class="input-field">or</div>
+            <div>☒ Until further notice</div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h4>Instructions</h4>
+        <p>1st Copy - Send to Lodgement FI</p>
+        <p>2nd Copy - Held by Bureau (where applicable)</p>
+        <p>3rd Copy - Held by TNA Issuer</p>
+    </div>
+
+    <footer style="font-size: 0.8em; margin-top: 20px; text-align: center;">
+        National Australia Bank Limited ABN 12 004 044 937 AFSL and Australian Credit License 230686
+    </footer>
+</body>
+</html>
